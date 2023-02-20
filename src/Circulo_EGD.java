@@ -6,6 +6,9 @@ public class Circulo_EGD extends FiguraGeometrica_EGD {
 	
 	public Circulo_EGD(double r, String tipoFigura) {
 		super(tipoFigura);
+		if (r<0){
+			r = r * -1;
+		}
 		radio = r;
 	}
 
